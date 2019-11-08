@@ -1,0 +1,14 @@
+version: '3'
+services:
+  myShell:
+    image: bsamson01/basic:latest
+    build: .
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./:/home/app
+    stdin_open: true
+    tty: true
+    entrypoint: su
+
+# docker-compose run myShell root
