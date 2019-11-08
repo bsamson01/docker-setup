@@ -3,7 +3,8 @@ RUN mkdir /home/app
 RUN apt-get update && apt-get install -y vim g++ x11-apps gcc build-essential zsh wget git curl \
      maven nodejs npm pkg-config libncurses5-dev libncursesw5-dev \
      xorg openbox xauth xserver-xorg-core xserver-xorg xorg openbox \
-     ubuntu-desktop kde-plasma-desktop slim lightdm tasksel
+     ubuntu-desktop kde-plasma-desktop slim lightdm tasksel \
+     software-properties-common apt-transport-https code
 RUN apt-get upgrade
 RUN npm install -g nodemon gulp-cli
 RUN chsh -s /usr/bin/zsh root
