@@ -36,7 +36,7 @@ RUN node -v
 RUN npm -v
 WORKDIR /home/app
 
-#docker build -t brandonsetup .
-#docker run -dit -P -p 5000:8080 -v $PWD:/home/app brandonsetup
+#docker build -t docker-setup .
+#docker run -dit -P -p 5000:8080 -v $PWD:/home/app docker-setup
 #su
 
